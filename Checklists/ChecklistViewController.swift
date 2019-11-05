@@ -75,6 +75,7 @@ class ChecklistViewController: UITableViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    navigationController?.navigationBar.prefersLargeTitles = true
     // Do any additional setup after loading the view, typically from a nib.
   }
   
@@ -83,9 +84,30 @@ class ChecklistViewController: UITableViewController {
     // Dispose of any resources that can be recreated.
   }
   
+   @IBAction func addItem() {
+    print("new row will be added")
+    let newRowIndex = items.count
+    let item = ChecklistItem()
+    item.text = "I am a new row"
+    item.checked = false
+    items.append(item)
+    let indexPath = IndexPath(row: newRowIndex, section: 0)
+    let indexPaths = [indexPath]
+    tableView.insertRows(at: indexPaths, with: .automatic)
+  }
   override func tableView(_ tableView: UITableView,
                           numberOfRowsInSection section: Int) -> Int {
     return items.count
+  }
+  override func tableView(
+                  _ tableView: UITableView,
+          commit editingStyle: UITableViewCellEditingStyle,
+           forRowAt indexPath: IndexPath) {
+  // 1
+    items.remove(at: indexPath.row)
+  // 2
+    let indexPaths = [indexPath]
+    tableView.deleteRows(at: indexPaths, with: .automatic)
   }
   
   override func tableView(_ tableView: UITableView,

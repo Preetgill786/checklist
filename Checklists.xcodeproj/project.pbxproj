@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B18D6752371BD980098B089 /*  AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B18D6742371BD980098B089 /*  AddItemViewController.swift */; };
 		9B50987123707E2B00C6E973 /* ChecklistItem .swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B50987023707E2B00C6E973 /* ChecklistItem .swift */; };
 		DD4643B41EF3869500E877E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4643B31EF3869500E877E9 /* AppDelegate.swift */; };
 		DD4643B61EF3869500E877E9 /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4643B51EF3869500E877E9 /* ChecklistViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B18D6742371BD980098B089 /*  AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " AddItemViewController.swift"; sourceTree = "<group>"; };
 		9B50987023707E2B00C6E973 /* ChecklistItem .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChecklistItem .swift"; sourceTree = "<group>"; };
 		DD4643B01EF3869500E877E9 /* Checklists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checklists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4643B31EF3869500E877E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				DD4643BA1EF3869500E877E9 /* Assets.xcassets */,
 				DD4643BC1EF3869500E877E9 /* LaunchScreen.storyboard */,
 				DD4643BF1EF3869500E877E9 /* Info.plist */,
+				9B18D6742371BD980098B089 /*  AddItemViewController.swift */,
 			);
 			path = Checklists;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				DD4643B61EF3869500E877E9 /* ChecklistViewController.swift in Sources */,
 				9B50987123707E2B00C6E973 /* ChecklistItem .swift in Sources */,
 				DD4643B41EF3869500E877E9 /* AppDelegate.swift in Sources */,
+				9B18D6752371BD980098B089 /*  AddItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +279,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QX3779KV49;
 				INFOPLIST_FILE = Checklists/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.Checklists;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,6 +294,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QX3779KV49;
 				INFOPLIST_FILE = Checklists/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.Checklists;
 				PRODUCT_NAME = "$(TARGET_NAME)";

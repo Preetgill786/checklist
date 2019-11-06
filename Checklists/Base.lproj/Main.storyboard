@@ -68,12 +68,13 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Item here...!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tyf-v4-O9d">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Item here...!" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tyf-v4-O9d">
                                                     <rect key="frame" x="10" y="10" width="300" height="24"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                                     <connections>
-                                                        <action selector="done" destination="Kdj-EF-Nji" eventType="editingDidEndOnExit" id="6VO-Gw-mdF"/>
+                                                        <action selector="done" destination="Kdj-EF-Nji" eventType="editingDidEndOnExit" id="ykc-ug-ho4"/>
+                                                        <outlet property="delegate" destination="Kdj-EF-Nji" id="bOL-lm-KGN"/>
                                                     </connections>
                                                 </textField>
                                             </subviews>
@@ -81,6 +82,7 @@
                                                 <constraint firstItem="Tyf-v4-O9d" firstAttribute="top" secondItem="EUD-Ib-gKb" secondAttribute="top" constant="10" id="FGt-2L-XPw"/>
                                                 <constraint firstItem="Tyf-v4-O9d" firstAttribute="leading" secondItem="EUD-Ib-gKb" secondAttribute="leading" constant="10" id="GWC-c0-nb4"/>
                                                 <constraint firstAttribute="trailing" secondItem="Tyf-v4-O9d" secondAttribute="trailing" constant="10" id="JKO-52-152"/>
+                                                <constraint firstItem="Tyf-v4-O9d" firstAttribute="centerY" secondItem="EUD-Ib-gKb" secondAttribute="centerY" id="g2h-qD-Dti"/>
                                                 <constraint firstAttribute="bottom" secondItem="Tyf-v4-O9d" secondAttribute="bottom" constant="10" id="pBe-hJ-Zm4"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -99,7 +101,7 @@
                                 <action selector="cancel" destination="Kdj-EF-Nji" id="WEc-pi-d0e"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="JgD-S6-1SU">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="done" id="JgD-S6-1SU">
                             <connections>
                                 <action selector="done" destination="Kdj-EF-Nji" id="DTX-qA-Pne"/>
                             </connections>

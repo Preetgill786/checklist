@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9B18D6752371BD980098B089 /*  AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B18D6742371BD980098B089 /*  AddItemViewController.swift */; };
-		9B50987123707E2B00C6E973 /* ChecklistItem .swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B50987023707E2B00C6E973 /* ChecklistItem .swift */; };
+		9B5DE7D7237B0C7A00F75601 /* AllListsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5DE7D6237B0C7A00F75601 /* AllListsTableViewController.swift */; };
 		DD4643B41EF3869500E877E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4643B31EF3869500E877E9 /* AppDelegate.swift */; };
 		DD4643B61EF3869500E877E9 /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4643B51EF3869500E877E9 /* ChecklistViewController.swift */; };
 		DD4643B91EF3869500E877E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4643B71EF3869500E877E9 /* Main.storyboard */; };
 		DD4643BB1EF3869500E877E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD4643BA1EF3869500E877E9 /* Assets.xcassets */; };
 		DD4643BE1EF3869500E877E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4643BC1EF3869500E877E9 /* LaunchScreen.storyboard */; };
+		DD910D9F1EF5FFC90007D812 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD910D9E1EF5FFC90007D812 /* ChecklistItem.swift */; };
+		DD910DA31EF64AFB0007D812 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD910DA21EF64AFB0007D812 /* ItemDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9B18D6742371BD980098B089 /*  AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " AddItemViewController.swift"; sourceTree = "<group>"; };
-		9B50987023707E2B00C6E973 /* ChecklistItem .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChecklistItem .swift"; sourceTree = "<group>"; };
+		9B5DE7D6237B0C7A00F75601 /* AllListsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllListsTableViewController.swift; sourceTree = "<group>"; };
 		DD4643B01EF3869500E877E9 /* Checklists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checklists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4643B31EF3869500E877E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD4643B51EF3869500E877E9 /* ChecklistViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ChecklistViewController.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
@@ -26,6 +26,8 @@
 		DD4643BA1EF3869500E877E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD4643BD1EF3869500E877E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD4643BF1EF3869500E877E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD910D9E1EF5FFC90007D812 /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
+		DD910DA21EF64AFB0007D812 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +47,10 @@
 				DD4643B21EF3869500E877E9 /* Checklists */,
 				DD4643B11EF3869500E877E9 /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
 		};
 		DD4643B11EF3869500E877E9 /* Products */ = {
 			isa = PBXGroup;
@@ -59,13 +64,14 @@
 			isa = PBXGroup;
 			children = (
 				DD4643B31EF3869500E877E9 /* AppDelegate.swift */,
-				9B50987023707E2B00C6E973 /* ChecklistItem .swift */,
 				DD4643B51EF3869500E877E9 /* ChecklistViewController.swift */,
 				DD4643B71EF3869500E877E9 /* Main.storyboard */,
 				DD4643BA1EF3869500E877E9 /* Assets.xcassets */,
 				DD4643BC1EF3869500E877E9 /* LaunchScreen.storyboard */,
 				DD4643BF1EF3869500E877E9 /* Info.plist */,
-				9B18D6742371BD980098B089 /*  AddItemViewController.swift */,
+				DD910D9E1EF5FFC90007D812 /* ChecklistItem.swift */,
+				DD910DA21EF64AFB0007D812 /* ItemDetailViewController.swift */,
+				9B5DE7D6237B0C7A00F75601 /* AllListsTableViewController.swift */,
 			);
 			path = Checklists;
 			sourceTree = "<group>";
@@ -142,9 +148,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD4643B61EF3869500E877E9 /* ChecklistViewController.swift in Sources */,
-				9B50987123707E2B00C6E973 /* ChecklistItem .swift in Sources */,
+				DD910DA31EF64AFB0007D812 /* ItemDetailViewController.swift in Sources */,
+				DD910D9F1EF5FFC90007D812 /* ChecklistItem.swift in Sources */,
+				9B5DE7D7237B0C7A00F75601 /* AllListsTableViewController.swift in Sources */,
 				DD4643B41EF3869500E877E9 /* AppDelegate.swift in Sources */,
-				9B18D6752371BD980098B089 /*  AddItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +286,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QX3779KV49;
 				INFOPLIST_FILE = Checklists/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.Checklists;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -294,7 +300,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QX3779KV49;
 				INFOPLIST_FILE = Checklists/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.Checklists;
 				PRODUCT_NAME = "$(TARGET_NAME)";
